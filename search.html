@@ -49,8 +49,9 @@
 
        async function getAll() {
         let host = "http://localhost:8080";
-        //TODO
-       }
+        let response = await fetch(`${host}/api/ducks`);
+      
+      }
 
       async function search() {    
             if(ducks.length == 0) {
